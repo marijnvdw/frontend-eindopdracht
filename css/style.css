@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    background-color: #f5f5f7;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+}
+
+nav img {
+    margin: 0px 20px;
+    width: 40px;
+    height: 40px;
+}
+
+nav a {
+    display: flex;
+    padding: 10px;
+    color: #929cb0;
+    font-weight: bold;
+    text-decoration: none;
+    justify-content: center;
+}
+
+nav a:hover {
+    background-color: rgb(223, 223, 223);
+    color: white;
+    border-radius: 10px;
+}
+
+/* End navigation */
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-image: url(../images/AppleVisionPro.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+header h1 {
+    display: flex;
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    color: white;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.header-button {
+    padding: 10px 30px;
+    color: black;
+    background-color: rgb(236, 236, 235);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.header-button:hover {
+    color: black;
+    background-color: white;
+}
+
+/* End header */
+
+/* Main */
+/* Other products */
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    width: 70vw;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.otherPoducts-container {
+    display: flex;
+    gap: 30px;
+}
+
+.otherPoducts-container article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 1vw;
+    align-items: flex-end;
+}
+
+.otherPoducts-container article img {
+    width: 100%;
+    border-radius: 1vw;
+    height: 190px;
+    object-fit: cover;
+}
+
+.products-container article h3 {
+    margin-bottom: 0px;
+}
+
+.products-content {
+    flex: 1;
+}
+
+.products-cards {
+    transform-origin: center;
+    transition: all 1s ease;
+}
+
+.products-cards:hover {
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 0.4);
+}
+
+.button-products {
+    background-color: blue;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+}
+
+.button-products:hover {
+    background-color: rgb(60, 60, 255);
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 0.1);
+}
+
+/* End other products */
+
+/* Form */
+.form-section {
+    background-color: rgb(231, 230, 230);
+    padding: 20px 15vw 20px 15vw;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.form-titel {
+    margin-top: 50px;
+}
+
+.radiobutton {
+    display: flex;
+    justify-content: flex-start;
+}
+
+input,
+select,
+textarea {
+    border-radius: 5px;
+    border: #cbd3e1 3px solid;
+    padding: 10px;
+}
+
+.form-element {
+    display: flex;
+    justify-content: space-between
+}
+
+.form-element input,
+.form-element select {
+    width: 50%;
+}
+
+.form-element label {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.form-element2 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.form-element2 label {
+    margin-right: auto;
+}
+
+label {
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+.conditions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.radiobutton label {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.button-form {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.button-form:hover {
+    background-color: rgb(60, 60, 255);
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 0.1);
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+    border: 3px green solid;
+}
+
+input:not(:placeholder-shown):not(:focus):invalid,
+select:not(:placeholder-shown):not(:focus):invalid,
+textarea:not(:placeholder-shown):not(:focus):invalid {
+    border: 3px red solid;
+}
+
+/* End form */
+/* End main */
+
+/* Footer */
+footer {
+    background-color: rgb(42, 41, 41);
+    color: rgb(192, 192, 192);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-text {
+    padding: 10px;
+}
+
+footer img {
+    height: 25px;
+    margin: 10px;
+}
+
+/* End footer */
+
+@media (orientation: portrait) {
+
+    #center-container {
+        width: 90vw;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        width: 100vw;
+        position: initial;
+    }
+
+    nav img {
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 40px;
+        height: 40px;
+        align-self: center;
+    }
+
+    /* End navigation */
+
+    /* Header */
+    header {
+        padding: 35px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    /* End header */
+
+    /* Main */
+    main {
+        width: 85vw;
+    }
+
+    .otherPoducts-container {
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px
+    }
+
+    .products-content {
+        padding: 20px;
+    }
+
+    .otherPoducts-container article img {
+        border-radius: 20px;
+        height: 350px;
+    }
+
+    /* End main */
+
+    /* Form */
+    .form-element,
+    .form-element2 {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .form-element input,
+    .form-element select {
+        width: 100%;
+    }
+
+    .form-element2 {
+        gap: 10px;
+    }
+
+    .form-section {
+        padding: 20px 5vw 20px 5vw;
+    }
+
+
+    /* End form */
+}

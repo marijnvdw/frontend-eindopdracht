@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Vision Pro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <img src="./images/apple-logo-transparent.png" alt="Apple logo">
+        <a href="#">Home</a>
+        <a href="#iphone">Iphone</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+        <h1>Vision Pro</h1>
+        <a class="header-button" href="https://www.apple.com/apple-vision-pro/" target=”_blank”>Pre-order now</a>
+    </header>
+
+    <main id="iphone">
+        <section>
+            <h2>Iphone</h2>
+            <div class="otherPoducts-container">
+
+                <article class="products-cards">
+                    <div class="products-content">
+                        <img src="./images/Iphone14White.jpg" alt="Iphone 14">
+                        <h3>Iphone 14</h3>
+                        <p>As amazing as ever.</p>
+                    </div>
+                    <a href="https://www.apple.com/iphone-14" class="button-products" target=”_blank”>See Details</a>
+                </article>
+
+                <article class="products-cards">
+                    <div class="products-content">
+                        <img src="./images/Iphone15White.jpg" alt="Iphone 15">
+                        <h3>Iphone 15</h3>
+                        <p>A total powerhouse</p>
+                    </div>
+                    <a href="https://www.apple.com/iphone-15/" class="button-products" target=”_blank”>See Details</a>
+                </article>
+
+                <article class="products-cards">
+                    <div class="products-content">
+                        <img src="./images/Iphone15proWhite.jpg" alt="Iphone 15 Pro">
+                        <h3>Iphone 15 Pro</h3>
+                        <p>The ultimate Iphone</p>
+                    </div>
+                    <a href="https://www.apple.com/iphone-15-pro/" class="button-products" target=”_blank”>See
+                        Details</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="form-section">
+            <h2 class="form-titel">Contact</h2>
+            <form>
+                <div class="form-element">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                </div>
+
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="form-element">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" placeholder="City" required>
+                </div>
+
+                <div class="form-element">
+                    <label for="birthdate">Birthdate</label>
+                    <input type="date" name="birthdate" id="birthdate" required>
+                </div>
+
+                <div class="form-element">
+                    <label for="interested">Interested in</label>
+                    <select id="interested" name="interested" required>
+                        <option value="">...</option>
+                        <option value="0">Get in contact</option>
+                        <option value="1">Information about a product</option>
+                        <option value="2">Buying the product</option>
+                    </select>
+                </div>
+
+                <label for="message" class="message-label">Message</label>
+                <textarea type="text" name="message" id="message" rows="10" placeholder="" required></textarea>
+
+                <div class="form-element2">
+                    <label for="newsletter" class="newsletter-label">Newsletter</label>
+                    <div class="radiobutton">
+                        <input type="radio" id="newsletter" name="newsletter" value="yes" required>
+                        <label for="yes">Yes</label>
+                    </div>
+                    <div class="radiobutton">
+                        <input type="radio" id="newsletter" name="newsletter" value="no" required>
+                        <label for="no">No</label>
+                    </div>
+                </div>
+                <div class="conditions">
+                    <div>
+                        <input type="checkbox" id="conditions" name="conditions" value="conditions" required>
+                        <label for="conditions">I accept the terms and conditions</label>
+                    </div>
+
+                    <button class="button-form" href="#">Send</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-text">Coryright Marijn vdw</div>
+        <img src="images/Apple_logo_white.png">
+    </footer>
+</body>
+
+</html>
